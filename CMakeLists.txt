@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(wheel_msg)
+project(wheel_msgs)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -25,6 +25,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WheelAngles.msg"
+  "msg/WheelSpeeds.msg"
   # DEPENDENCIES builtin_interfaces
 )
 
